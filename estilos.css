@@ -1,0 +1,106 @@
+/* Estilos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+  
+  /* Estilos para el encabezado */
+  #indice {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  #indice h1, #indice h2 {
+    margin: 0;
+  }
+  
+  #indice ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  #indice li {
+    margin: 5px 0;
+  }
+  
+  #indice li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  #indice li a:hover {
+    color: #000;
+  }
+  
+  /* Estilos para los títulos */
+  h1, h2, h3 {
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  /* Estilos para los párrafos */
+  p {
+    margin: 0;
+    padding: 0 0 20px 0;
+  }
+  
+  /* Estilos para los enlaces */
+  a {
+    color: #0072C6;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+/* Estilo para todas las tablas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Estilo de negritas para el titulo de la tabla */
+  caption {
+    font-weight: bold;
+  }
+  
+  /* Estilo para las celdas de la tabla */
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Estilo para la fila de encabezado de la tabla */
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Estilo para la fila de la tabla al pasar el mouse sobre ella */
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Estilo para la primera columna de la tabla */
+  td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Estilo para la tabla de sistemas de unidades */
+  #SI table {
+    background-color: #f9f9f9;
+  }
+  
+  /* Estilo para la tabla de sistema ingles */
+  #sistema_ingles table {
+    background-color: #e0e0e0;
+  }
+  
