@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="estilos.css">
     <title>Fisica</title>
 </head>
@@ -21,7 +23,7 @@
             <li><a href="#que es el metodo cientifico">¿Qué es el Método Científico?</a></li>
             <li><a href="#sistema de unidades">Tablas de unidades en los diferentes tipos de sistemas</a></li>
         </ul>
-    </div>
+      </div>
     <div>
       <section id="que es la fisica">
         <div id="que es la Fisica">
@@ -185,6 +187,109 @@
           </section>  
         </div>
       </div>
+    </div>
+    <div id="notacion cientificia">
+      <section id="notacion cientifica">
+        <h1>Notacion cientifica</h1>
+        <p id="notacion">La notación científica es una forma de representar números muy grandes o muy pequeños de manera concisa. Consiste en escribir un número en forma de un producto entre un coeficiente y una potencia de 10. El coeficiente debe estar comprendido entre 1 y 10, y la potencia de 10 indica cuántas veces se desplaza la coma decimal.
+          Por ejemplo, el número 300,000,000 se escribiría en notación científica como 3 x 10^8. Aquí, el coeficiente es 3 y la potencia de 10 es 8, lo que indica que la coma decimal se desplaza ocho lugares hacia la derecha.
+          De manera similar, un número pequeño como 0.000025 se expresaría como 2.5 x 10^-5. Aquí, el coeficiente es 2.5 y la potencia de 10 es -5, lo que significa que la coma decimal se desplaza cinco lugares hacia la izquierda.        
+          La notación científica es útil en la ciencia y la matemática porque permite trabajar con números muy grandes o muy pequeños de forma más sencilla y comprensible. También facilita la representación de valores extremos en campos como la física, la astronomía y la química.</p>
+          <div id="tabla de notacion cientifica">
+            <table>
+              <tr>
+                <th>Notación Científica</th>
+                <th>Número</th>
+                <th>Nombre</th>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>-12</sup></td>
+                <td>0.000000000001</td>
+                <td>Pico</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>-9</sup></td>
+                <td>0.000000001</td>
+                <td>Nano</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>-6</sup></td>
+                <td>0.000001</td>
+                <td>Micro</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>-4</sup></td>
+                <td>0.0001</td>
+                <td>Milli</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>-2</sup></td>
+                <td>0.01</td>
+                <td>Centi</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>-1</sup></td>
+                <td>0.1</td>
+                <td>Deci</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>0</sup></td>
+                <td>1</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>2</sup></td>
+                <td>100</td>
+                <td>Hecto</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>3</sup></td>
+                <td>1000</td>
+                <td>Kilo</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>5</sup></td>
+                <td>100000</td>
+                <td>Hecto</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>6</sup></td>
+                <td>1000000</td>
+                <td>Mega</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>9</sup></td>
+                <td>1000000000</td>
+                <td>Giga</td>
+              </tr>
+              <tr>
+                <td>1.0 x 10<sup>12</sup></td>
+                <td>1000000000000</td>
+                <td>Tera</td>
+              </tr>
+            </table>            
+          </div>
+          <div id="conversor-de-notacion">
+            <h1>Convertidor de notación científica</h1>
+            <table>
+              <tr>
+                <td><label for="numero">Número:</label></td>
+                <td><input type="number" id="numero"></td>
+              </tr>
+              <tr>
+                <td><label for="potencia">Potencia:</label></td>
+                <td><input type="number" id="potencia"></td>
+              </tr>
+              <tr>
+                <td colspan="2"><button onclick="convertirNotacion()">Convertir</button></td>
+              </tr>
+              <tr>
+                <td>Resultado numérico:</td>
+                <td><span id="resultado"></span></td>
+              </tr>
+            </table>
+          </div>
+      </section>
     </div>
 </body>
 </html>

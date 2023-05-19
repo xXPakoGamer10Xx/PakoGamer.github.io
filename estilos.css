@@ -103,4 +103,62 @@ table {
   #sistema_ingles table {
     background-color: #e0e0e0;
   }
+
+  #conversor-de-notacion {
+    margin: 20px auto;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  input[type="number"] {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Ocultar flechas de incremento y decremento en campos de entrada numérica */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  
+  td:last-child {
+    text-align: center;
+  }
   
