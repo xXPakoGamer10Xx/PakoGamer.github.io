@@ -193,7 +193,7 @@ table {
     /* Estilos específicos para dispositivos móviles */
   
     /* Ajustes de la tabla */
-    table {
+    #tableresponsive-table {
       width: 100%;
       overflow-x: auto;
     }
