@@ -13,7 +13,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
   }
-
+  
   /* Estilos para el encabezado */
   #indice {
     background-color: #f2f2f2;
@@ -231,10 +231,9 @@ table {
       transform-origin: top; /* Ajusta el origen de la transformación según tu preferencia */
     }
 
-    #sistema-ingles.table-container {
+    #sistema-ingles.table-container1 {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-
   }
