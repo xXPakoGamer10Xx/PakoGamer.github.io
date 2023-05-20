@@ -205,7 +205,7 @@ table {
       font-family: Arial, sans-serif;
     }
 
-    .responsive-table .table-container {
+    .responsive-table .responsive-table {
       overflow-x: auto;
       padding-bottom: 16px; /* Ajusta el espacio inferior según tu preferencia */
     }
