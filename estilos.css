@@ -223,15 +223,4 @@ table {
       transform-origin: top; /* Ajusta el origen de la transformación según tu preferencia */
     }
 
-    #sistema-ingles.table-container1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    #sistema-ingles.table-container1 table {
-      max-width: 100%;
-      width: auto;
-    }
-
   }
