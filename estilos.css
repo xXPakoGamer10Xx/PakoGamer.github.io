@@ -13,7 +13,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
   }
-  
+
   /* Estilos para el encabezado */
   #indice {
     background-color: #f2f2f2;
@@ -229,6 +229,12 @@ table {
     .responsive-table table {
       transform: scale(0.8); /* Ajusta la escala según tu preferencia */
       transform-origin: top; /* Ajusta el origen de la transformación según tu preferencia */
+    }
+
+    #sistema-ingles.table-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
   }
