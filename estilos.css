@@ -198,14 +198,6 @@ table {
       overflow-x: auto;
     }
 
-    body {
-      display: flexbox;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-
     .responsive-table {
       width: 80%;
       margin: 0 auto;
