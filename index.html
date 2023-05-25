@@ -23,6 +23,17 @@
             <li><a href="#que es el metodo cientifico">¿Qué es el Método Científico?</a></li>
             <li><a href="#sistema de unidades">Tablas de unidades en los diferentes tipos de sistemas</a></li>
             <li><a href="#notacion cientifica">Notacion cientifica</a></li>
+            <li><a href="#magnitud">Magnitud</a></li>
+            <li><a href="#clasificacion">Clasificacion de magnitudes</a></li>
+            <li><a href="#derivadas">Magnitudes derivadas</a></li>
+            <li><a href="#longitud">Longitud</a></li>
+            <li><a href="#masa">Masa</a></li>
+            <li><a href="#segundo">Segundo</a></li>
+            <li><a href="#amperio">Amperio</a></li>
+            <li><a href="#kelvin">Kelvin</a></li>
+            <li><a href="#Mol">Mol</a></li>
+            <li><a href="#intensidad-luminosa">Intensidad luminosa</a></li>
+            <li><a href="#estereorradian">Estereorradián</a></li>
         </ul>
       </div>
     <div>
@@ -278,8 +289,42 @@
                 <td><input type="number" id="numero"></td>
               </tr>
               <tr>
-                <td><label for="potencia">Potencia:</label></td>
-                <td><input type="number" id="potencia"></td>
+                <td><label for="entrada">Notación de entrada:</label></td>
+                <td>
+                  <select id="entrada">
+                    <option value="tera">tera</option>
+                    <option value="giga">giga</option>
+                    <option value="mega">mega</option>
+                    <option value="kilo">kilo</option>
+                    <option value="hecto">hecto</option>
+                    <option value="deca">deca</option>
+                    <option value="deci">deci</option>
+                    <option value="centi">centi</option>
+                    <option value="milli">milli</option>
+                    <option value="micro">micro</option>
+                    <option value="nano">nano</option>
+                    <option value="pico">pico</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="salida">Notación de salida:</label></td>
+                <td>
+                  <select id="salida">
+                    <option value="tera">tera</option>
+                    <option value="giga">giga</option>
+                    <option value="mega">mega</option>
+                    <option value="kilo">kilo</option>
+                    <option value="hecto">hecto</option>
+                    <option value="deca">deca</option>
+                    <option value="deci">deci</option>
+                    <option value="centi">centi</option>
+                    <option value="milli">milli</option>
+                    <option value="micro">micro</option>
+                    <option value="nano">nano</option>
+                    <option value="pico">pico</option>
+                  </select>
+                </td>
               </tr>
               <tr>
                 <td colspan="2"><button onclick="convertirNotacion()">Convertir</button></td>
@@ -290,6 +335,126 @@
               </tr>
             </table>
           </div>
+      </section>
+    </div>
+    <div id="Magnitudes" class="container">
+      <section id="magnitud">
+        <h1>Magnitud</h1>
+        <p id="Que es una magnitud">Una magnitud es una propiedad o atributo de un objeto o fenómeno que puede ser medido o cuantificado. Representa una cantidad física que puede ser descrita numéricamente y que está asociada con una unidad de medida específica.
+          Las magnitudes se utilizan para cuantificar características observables en el mundo físico, como la longitud, el tiempo, la masa, la velocidad, la temperatura, la densidad, la fuerza, entre muchas otras. Cada magnitud tiene una unidad de medida asociada, que proporciona una referencia estándar para expresar su valor.
+          Las magnitudes pueden ser escalares o vectoriales. Las magnitudes escalares se describen completamente por un número y una unidad, como la temperatura o la masa. Por otro lado, las magnitudes vectoriales tienen una dirección y una magnitud, como la velocidad o la fuerza.</p>
+          <section id="clasificacion">
+            <h2>Clasificacion de magnitudes</h2>
+            <p id="Clasificacion de magnitudes">Magnitudes fundamentales: Son aquellas magnitudes que se consideran independientes y no se pueden expresar en términos de otras magnitudes. Estas magnitudes se eligen como base en un sistema de unidades y se utilizan para definir y medir otras magnitudes. En el Sistema Internacional (SI), se consideran siete magnitudes fundamentales: longitud, masa, tiempo, intensidad de corriente eléctrica, temperatura, cantidad de sustancia e intensidad luminosa. Estas magnitudes fundamentales se eligen de manera que sean universalmente aplicables y puedan ser medibles con precisión.</p>
+          </section>
+        <section id="derivadas">
+          <h2>Magnitudes derivadas</h2>
+          <p>Magnitudes derivadas: Son aquellas magnitudes que se obtienen a partir de combinaciones algebraicas de las magnitudes fundamentales. Estas magnitudes se construyen mediante operaciones matemáticas como la multiplicación, la división o la potenciación de las magnitudes fundamentales. Por ejemplo, la velocidad se define como la magnitud derivada de la longitud dividida por el tiempo (metros por segundo), y la densidad se define como la magnitud derivada de la masa dividida por el volumen (kilogramos por metro cúbico). En el SI, existen numerosas magnitudes derivadas que se utilizan para describir diversas propiedades y fenómenos físicos.</p>
+        </section>  
+          <table>
+            <caption>Magnitudes y Unidades</caption>
+            <thead>
+              <tr>
+                <th>Magnitud</th>
+                <th>Unidad de medida</th>
+                <th>Abreviatura</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Longitud</td>
+                <td>Metro (m)</td>
+                <td>m</td>
+              </tr>
+              <tr>
+                <td>Masa</td>
+                <td>Kilogramo (kg)</td>
+                <td>kg</td>
+              </tr>
+              <tr>
+                <td>Tiempo</td>
+                <td>Segundo (s)</td>
+                <td>s</td>
+              </tr>
+              <tr>
+                <td>Intensidad de corriente eléctrica</td>
+                <td>Ampere (A)</td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td>Temperatura</td>
+                <td>Kelvin (K)</td>
+                <td>K</td>
+              </tr>
+              <tr>
+                <td>Cantidad de sustancia</td>
+                <td>Mol (mol)</td>
+                <td>mol</td>
+              </tr>
+              <tr>
+                <td>Intensidad luminosa</td>
+                <td>Candela (cd)</td>
+                <td>cd</td>
+              </tr>
+              <tr>
+                <td>Fuerza</td>
+                <td>Newton (N)</td>
+                <td>N</td>
+              </tr>
+              <tr>
+                <td>Volumen</td>
+                <td>Metro cúbico (m³)</td>
+                <td>m³</td>
+              </tr>
+              <tr>
+                <td>Densidad</td>
+                <td>Kilogramo por metro cúbico (kg/m³)</td>
+                <td>kg/m³</td>
+              </tr>
+              <tr>
+                <td>Presión</td>
+                <td>Pascal (Pa)</td>
+                <td>Pa</td>
+              </tr>
+              <tr>
+                <td>Rapidez</td>
+                <td>Metro por segundo (m/s)</td>
+                <td>m/s</td>
+              </tr>
+            </tbody>
+          </table>
+          <section id="longitud">
+            <h1>Longitud</h1>
+            <p id="Longitud">La longitud es una magnitud física que se refiere a la distancia entre dos puntos en el espacio. En el Sistema Internacional (SI), la unidad de medida utilizada es el metro (m). El metro se define como la distancia que recorre la luz en el vacío durante un intervalo de tiempo de 1/299,792,458 de segundo.</p>
+          </section>
+          <section id="masa">
+            <h1>Masa</h1>
+            <p id="masa">La masa es una medida de la cantidad de materia que contiene un objeto. Es una propiedad intrínseca de los objetos y no depende de su ubicación en el espacio. En el SI, la unidad de medida utilizada es el kilogramo (kg), y se define como la masa del prototipo internacional del kilogramo, que es un cilindro de platino-iridio guardado en la Oficina Internacional de Pesos y Medidas en Francia.</p>
+          </section>
+          <section id="segundo">
+            <h1>Segundo</h1>
+            <p id="segundo">El segundo es la unidad de medida de tiempo en el SI. Se define como la duración de 9,192,631,770 periodos de radiación correspondientes a la transición entre los dos niveles hiperfinos del estado fundamental del átomo de cesio-133.</p>
+          </section>
+          <section id="amperio">
+            <h1>Amperio</h1>
+            <p id="Ampere">El amperio es la unidad de medida de la intensidad de corriente eléctrica en el SI. Se define como la corriente constante que, al circular por dos conductores paralelos, rectilíneos, de longitud infinita y sección circular despreciable, colocados a una distancia de un metro entre sí en el vacío, produce una fuerza de 2 × 10^−7 newtons por metro de longitud entre los conductores.</p>
+          </section>
+          <section id="kelvin">
+            <h1>Kelvin</h1>
+            <p id="kelvin">El kelvin es la unidad de medida de temperatura en el SI. Se define como la fracción 1/273.16 de la temperatura termodinámica del punto triple del agua. El punto triple del agua es aquel en el que las fases sólida, líquida y gaseosa coexisten en equilibrio.</p>
+          </section>
+          <section id="Mol">
+            <h1>Mol</h1>
+            <p id="Mol">El mol es la unidad de medida de cantidad de sustancia en el SI. Se define como la cantidad de sustancia que contiene tantas entidades elementales (como átomos, moléculas o iones) como hay en 0.012 kilogramos de carbono-12.</p>
+          </section>
+          <section id="intensidad-luminosa">
+            <h1>Intensidad luminosa</h1>
+            <p id="Intensidad luminosa">La intensidad luminosa es una magnitud que describe la cantidad de luz emitida por una fuente en una dirección particular. En el SI, la unidad de medida utilizada es la candela (cd). Se define como la intensidad luminosa en una dirección específica de una fuente que emite radiación monocromática de frecuencia 540 × 10^12 hercios y cuya intensidad energética en esa dirección es de 1/683 vatios por estereorradián.          </p>
+          </section>
+          <section id="estereorradian">
+            <h1>Estereorradián</h1>
+            <p id="estererradian">El estereorradián es una unidad de medida de ángulo sólido en el espacio tridimensional. Representa la cantidad de ángulo sólido que abarca una esfera completa. Es adimensional, ya que no tiene unidades asociadas.</p>         
+          </section>
       </section>
     </div>
 </body>
