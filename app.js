@@ -9,54 +9,117 @@ links.forEach(link => {
   });
 });
 
-var prefixes = {
-  yotta: 1e24,
-  zetta: 1e21,
-  exa: 1e18,
-  peta: 1e15,
-  tera: 1e12,
-  giga: 1e9,
-  mega: 1e6,
-  kilo: 1e3,
-  hecto: 1e2,
-  deca: 1e1,
-  deci: 1e-1,
-  centi: 1e-2,
-  milli: 1e-3,
-  micro: 1e-6,
-  nano: 1e-9,
-  pico: 1e-12,
-  femto: 1e-15,
-  atto: 1e-18,
-  zepto: 1e-21,
-  yocto: 1e-24
-};
+// Función para convertir de notación científica a decimal
+function convertirNotacion() {
+  var numero = parseFloat(document.getElementById("numero").value);
+  var entrada = parseFloat(document.getElementById("entrada").value);
+  var salida = parseFloat(document.getElementById("salida").value);
 
-// Función para convertir a notación científica
-function convertToScientific(number, prefix) {
-  if (prefixes.hasOwnProperty(prefix)) {
-    return (number * prefixes[prefix]).toExponential(2);
-  }
-  return "Prefijo no válido";
+  var resultado = numero * Math.pow(10, entrada - salida);
+  resultado = resultado.toFixed(10); // Limita a 10 dígitos después del punto decimal
+  document.getElementById("resultado").innerText = resultado;
 }
 
-// Función para manejar el evento click del botón de conversión
-function convertirNotacion() {
-  // Obtener el número ingresado por el usuario
-  var numero = parseFloat(document.getElementById("numero").value);
+//Convertidor de unidades a SD
+function actualizarUnidades() {
+  const tipoUnidad = document.getElementById("tipoUnidad").value;
+  const unidadEntrada = document.getElementById("unidadEntrada");
+  const unidadSalida = document.getElementById("unidadSalida");
 
-  // Obtener el prefijo de entrada seleccionado
-  var entrada = document.getElementById("entrada").value;
+  unidadEntrada.innerHTML = "";
+  unidadSalida.innerHTML = "";
 
-  // Obtener el prefijo de salida seleccionado
-  var salida = document.getElementById("salida").value;
+  switch (tipoUnidad) {
+    case "distancia":
+      agregarOpcion(unidadEntrada, "kilo", "kilómetros");
+      agregarOpcion(unidadSalida, "kilo", "kilómetros");
+      agregarOpcion(unidadEntrada, "hecto", "hectómetros");
+      agregarOpcion(unidadSalida, "hecto", "hectómetros");
+      agregarOpcion(unidadEntrada, "deca", "decámetros");
+      agregarOpcion(unidadSalida, "deca", "decámetros");
+      agregarOpcion(unidadEntrada, "deci", "decímetros");
+      agregarOpcion(unidadSalida, "deci", "decímetros");
+      agregarOpcion(unidadEntrada, "centi", "centímetros");
+      agregarOpcion(unidadSalida, "centi", "centímetros");
+      agregarOpcion(unidadEntrada, "mili", "milímetros");
+      agregarOpcion(unidadSalida, "mili", "milímetros");
+      break;
+    case "masa":
+      agregarOpcion(unidadEntrada, "kilo", "kilogramos");
+      agregarOpcion(unidadSalida, "kilo", "kilogramos");
+      agregarOpcion(unidadEntrada, "hecto", "hectogramos");
+      agregarOpcion(unidadSalida, "hecto", "hectogramos");
+      agregarOpcion(unidadEntrada, "deca", "decagramos");
+      agregarOpcion(unidadSalida, "deca", "decagramos");
+      agregarOpcion(unidadEntrada, "deci", "decigramos");
+      agregarOpcion(unidadSalida, "deci", "decigramos");
+      agregarOpcion(unidadEntrada, "centi", "centigramos");
+      agregarOpcion(unidadSalida, "centi", "centigramos");
+      agregarOpcion(unidadEntrada, "mili", "miligramos");
+      agregarOpcion(unidadSalida, "mili", "miligramos");
+      break;
+    case "volumen":
+      agregarOpcion(unidadEntrada, "kilo", "kilolitros");
+      agregarOpcion(unidadSalida, "kilo", "kilolitros");
+      agregarOpcion(unidadEntrada, "hecto", "hectolitros");
+      agregarOpcion(unidadSalida, "hecto", "hectolitros");
+      agregarOpcion(unidadEntrada, "deca", "decalitros");
+      agregarOpcion(unidadSalida, "deca", "decalitros");
+      agregarOpcion(unidadEntrada, "deci", "decilitros");
+      agregarOpcion(unidadSalida, "deci", "decilitros");
+      agregarOpcion(unidadEntrada, "centi", "centilitros");
+      agregarOpcion(unidadSalida, "centi", "centilitros");
+      agregarOpcion(unidadEntrada, "mili", "mililitros");
+      agregarOpcion(unidadSalida, "mili", "mililitros");
+      break;
+  }
+}
 
-  // Convertir el número a notación científica
-  var resultadoCientifico = convertToScientific(numero, entrada);
+function agregarOpcion(selectElement, valor, texto) {
+  const option = document.createElement("option");
+  option.value = valor;
+  option.textContent = texto;
+  selectElement.appendChild(option);
+}
 
-  // Convertir el número de notación científica a la notación seleccionada
-  var resultadoFinal = convertToScientific(parseFloat(resultadoCientifico), salida);
+function convertir() {
+  const cantidad = parseFloat(document.getElementById("cantidad").value);
+  const unidadEntrada = document.getElementById("unidadEntrada").value;
+  const unidadSalida = document.getElementById("unidadSalida").value;
 
-  // Mostrar el resultado
-  document.getElementById("resultado").textContent = resultadoFinal;
+  const factorConversion = obtenerFactorConversion(unidadEntrada, unidadSalida);
+  const resultado = cantidad * factorConversion;
+
+  document.getElementById("result").textContent = resultado.toFixed(5);
+}
+
+function obtenerFactorConversion(unidadEntrada, unidadSalida) {
+  const factoresConversion = {
+    kilo: { kilo: 1, hecto: 10, deca: 100, deci: 1000, centi: 10000, mili: 1000000 },
+    hecto: { kilo: 0.1, hecto: 1, deca: 10, deci: 100, centi: 1000, mili: 100000 },
+    deca: { kilo: 0.01, hecto: 0.1, deca: 1, deci: 10, centi: 100, mili: 10000 },
+    deci: { kilo: 0.001, hecto: 0.01, deca: 0.1, deci: 1, centi: 10, mili: 1000 },
+    centi: { kilo: 0.0001, hecto: 0.001, deca: 0.01, deci: 0.1, centi: 1, mili: 100 },
+    mili: { kilo: 0.000001, hecto: 0.00001, deca: 0.0001, deci: 0.001, centi: 0.01, mili: 1 }
+  };
+
+  return factoresConversion[unidadEntrada][unidadSalida];
+}
+
+//Scroll para subir la pagina
+var scrollButton = document.getElementById("scrollButton");
+
+window.addEventListener("scroll", function() {
+  if (window.pageYOffset > 0) {
+    scrollButton.classList.remove("hidden");
+  } else {
+    scrollButton.classList.add("hidden");
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
