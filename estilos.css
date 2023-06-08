@@ -251,9 +251,194 @@ table {
   background-color: #555;
 }
 
-img {
-  max-width: 80%;
+.image-section {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.row img {
+  max-width: 100%;
   height: auto;
+  width: auto\9; /* Fix for IE9 and earlier */
+}
+
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+/* Estilos para barra */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.bar {
   display: block;
-  margin: 0 auto;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: transform 0.3s;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Ajusta el último valor (0.8) para controlar la opacidad */
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.navbar-menu.show {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar ul li a.active {
+  color: #fff;
+  position: relative;
+}
+
+.navbar ul li a.active::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  opacity: 0.5;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.navbar ul li a.active:hover::before {
+  transform: scaleX(1);
+}
+
+.navbar-menu h1,
+.navbar-menu h2 {
+  color: #fff;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-menu ul li {
+  margin-bottom: 10px;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px; /* Ajusta la altura máxima de la lista */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical */
+}
+
+.navbar-menu ul li {
+  margin-bottom: 10px;
+}
+
+.navbar-menu ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Klavika","Arial", sans-serif; /* Cambia el tipo de letra */
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+}
+
+.navbar-menu ul li a:hover {
+  background-color: #555;
+  color: #ccc;
+}
+
+.navbar-logo {
+  margin-right: 10px;
+}
+
+.navbar-logo img {
+  width: 50px; /* Ajusta el tamaño según tus necesidades */
+}
+
+/*cambiar de rayas a x */
+.navbar-toggle.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.navbar-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Media query para mostrar el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+  }
+}
+
+@font-face {
+  font-family: 'Klavika';
+  src: url('fonts/klavika-bold-webfont.woff2') format('woff2'), /* Ruta al archivo WOFF2 de la fuente Klavika Bold */
+       url('fonts/klavika-bold-webfont.woff') format('woff'); /* Ruta al archivo WOFF de la fuente Klavika Bold */
+  font-weight: bold;
+  font-style: normal;
 }

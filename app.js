@@ -123,3 +123,16 @@ function scrollToTop() {
     behavior: "smooth"
   });
 }
+
+function toggleMenu() {
+  var navbarMenu = document.getElementById("navbarMenu");
+  navbarMenu.classList.toggle("show");
+}
+
+const navbarToggle = document.getElementById('navbar-toggle');
+const navbarMenu = document.getElementById('navbar-menu');
+
+navbarToggle.addEventListener('click', function() {
+  this.classList.toggle('open');
+  navbarMenu.classList.toggle('show');
+});

@@ -7,15 +7,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fonts/klavika.css"> <!-- Enlaza el archivo CSS de la fuente Klavika -->
+    <link rel="icon" type="image/png" href="https://drive.google.com/file/d/1aRoeJrzaqE7mXgFBxsV7SA3VMbWjfWgF/view?usp=sharing">
+    <link rel="icon" type="image/png" href="https://media.licdn.com/dms/image/C4E0BAQFEE29kEI9Bcw/company-logo_200_200/0/1571181450340?e=2147483647&v=beta&t=nktHEHP0fuvHELz-kwb6tC9b8V2GnVgYS4s_Gp9x0_A">
     <title>Fisica</title>
 </head>
 <body>
   <script src="app.js"></script>
   <button id="scrollButton" onclick="scrollToTop()">&#8593;</button>
-    <div id="indice">
-        <h1>Indice</h1>
-        <h2>Temas de Fisica</h2>
-        <ul>
+  <div class="navbar">
+  <button class="navbar-toggle" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    <div class="navbar-logo">
+      <img src="https://media.licdn.com/dms/image/C4E0BAQFEE29kEI9Bcw/company-logo_200_200/0/1571181450340?e=2147483647&v=beta&t=nktHEHP0fuvHELz-kwb6tC9b8V2GnVgYS4s_Gp9x0_A" alt="Logo">
+    </div>
+    <div class="navbar-menu" id="navbarMenu">
+        <h1>Índice</h1>
+        <h2>Temas de Física</h2>
+          <ul>
             <li><a href="#que es la fisica">¿Qué es la Física?</a></li>
             <li><a href="#como se divide la fisica">División de la Física</a></li>
             <li><a href="#que es la ciencia">Concepto de Ciencia</a></li>
@@ -27,16 +39,13 @@
             <li><a href="#magnitud">Magnitud</a></li>
             <li><a href="#clasificacion">Clasificacion de magnitudes</a></li>
             <li><a href="#derivadas">Magnitudes derivadas</a></li>
-            <li><a href="#longitud">Longitud</a></li>
-            <li><a href="#masa">Masa</a></li>
-            <li><a href="#segundo">Segundo</a></li>
-            <li><a href="#amperio">Amperio</a></li>
-            <li><a href="#kelvin">Kelvin</a></li>
-            <li><a href="#Mol">Mol</a></li>
             <li><a href="#intensidad-luminosa">Intensidad luminosa</a></li>
             <li><a href="#estereorradian">Estereorradián</a></li>
-        </ul>
-      </div>
+            <li><a href="#Principios de la incertidumbre">Principio de incertidumbre</a></li>
+          </ul>
+    </div>
+</div>
+</div>
     <div>
       <section id="que es la fisica" class="container">
         <div id="que es la Fisica">
@@ -72,7 +81,7 @@
           <section id="que es la tecnologia">
             <h1>¿Que es la tecnologia?</h1>
             <p id="que es la tecnología">La tecnología se define como el conjunto de conocimientos y técnicas que, aplicados de forma lógica y ordenada, permiten al ser humano modificar su entorno material o virtual para satisfacer sus necesidades. Es un proceso combinado de pensamiento y acción con la finalidad de crear soluciones útiles. La tecnología es el conjunto de nociones y conocimientos científicos que el ser humano utiliza para lograr un objetivo preciso, que puede ser la solución de un problema especifico del individuo o la satisfacción de alguna de sus necesidades.</p>
-            <center><img src="https://th.bing.com/th/id/R.e3be54121c847728158280850dbbb75b?rik=ngii4XuDsqYXBQ&riu=http%3a%2f%2fwebipedia.es%2fwp-content%2fuploads%2f2020%2f11%2f00_Tecnolog%c3%ada.jpg&ehk=0d9hXSMRBoJSRp08%2bnW9WkqZ6tzbXXhk8plesg%2f452I%3d&risl=&pid=ImgRaw&r=0"></center>
+            <center><img src="https://th.bing.com/th/id/R.e3be54121c847728158280850dbbb75b?rik=ngii4XuDsqYXBQ&riu=http%3a%2f%2fwebipedia.es%2fwp-content%2fuploads%2f2020%2f11%2f00_Tecnolog%c3%ada.jpg&ehk=0d9hXSMRBoJSRp08%2bnW9WkqZ6tzbXXhk8plesg%2f452I%3d&risl=&pid=ImgRaw&r=0" width="500px" height="300px"></center>
           </section>
         </div>
         <div id="que es la investigación" class="container">
@@ -251,7 +260,197 @@
                       </tr>
                     </tbody>
                 </table>
-          </section>  
+          </section>
+          <div id="Sistema MKS">
+            <section id="MKS">
+              <h1>Sistema MKS</h1>
+              <p>El sistema MKS es un sistema de unidades de medida utilizado en física y otras ciencias, que se basa en las magnitudes fundamentales de metro (M), kilogramo (K) y segundo (S). Estas magnitudes representan, respectivamente, la longitud, la masa y el tiempo.
+                En el sistema MKS, se utilizan estas tres unidades básicas para derivar otras unidades de medida, como el newton (unidad de fuerza), el joule (unidad de energía) y el vatio (unidad de potencia).
+                El metro es la unidad de longitud en el sistema MKS y se define como la distancia que recorre la luz en el vacío durante 1/299,792,458 de segundo. El kilogramo es la unidad de masa y se define como la masa igual al prototipo internacional del kilogramo, que es un cilindro de platino-iridio almacenado en la Oficina Internacional de Pesos y Medidas en Francia. El segundo es la unidad de tiempo y se define como la duración de 9,192,631,770 periodos de radiación correspondiente a la transición entre los dos niveles hiperfinos del estado fundamental del átomo de cesio-133.</p>
+                <table>
+                  <tr>
+                    <th>Magnitud</th>
+                    <th>Unidad</th>
+                    <th>Símbolo</th>
+                  </tr>
+                  <tr>
+                    <td>Longitud</td>
+                    <td>Metro</td>
+                    <td>m</td>
+                  </tr>
+                  <tr>
+                    <td>Masa</td>
+                    <td>Kilogramo</td>
+                    <td>kg</td>
+                  </tr>
+                  <tr>
+                    <td>Tiempo</td>
+                    <td>Segundo</td>
+                    <td>s</td>
+                  </tr>
+                  <tr>
+                    <td>Fuerza</td>
+                    <td>Newton</td>
+                    <td>N</td>
+                  </tr>
+                  <tr>
+                    <td>Energía</td>
+                    <td>Joule</td>
+                    <td>J</td>
+                  </tr>
+                  <tr>
+                    <td>Potencia</td>
+                    <td>Vatio</td>
+                    <td>W</td>
+                  </tr>
+                  <tr>
+                    <td>Presión</td>
+                    <td>Pascal</td>
+                    <td>Pa</td>
+                  </tr>
+                  <tr>
+                    <td>Velocidad</td>
+                    <td>Metro por segundo</td>
+                    <td>m/s</td>
+                  </tr>
+                  <tr>
+                    <td>Aceleración</td>
+                    <td>Metro por segundo al cuadrado</td>
+                    <td>m/s²</td>
+                  </tr>
+                </table>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MdOB5pD-Z58?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            </section>
+            <br>
+            <div id="CGS">
+              <section id="Sistema CGS">
+                <H1>Sistema CGS</H1>
+                <p>El sistema CGS (centímetro-gramo-segundo) es un sistema de unidades de medida que se utiliza en física y otras ciencias. A diferencia del sistema MKS, que se basa en el metro, kilogramo y segundo, el sistema CGS utiliza el centímetro (cm), el gramo (g) y el segundo (s) como unidades fundamentales.
+                  En el sistema CGS, las magnitudes físicas se expresan en términos de estas tres unidades básicas y se derivan otras unidades a partir de ellas. Algunas de las unidades derivadas comunes en el sistema CGS incluyen el ergio (unidad de energía), el dina (unidad de fuerza) y el gal (unidad de aceleración).
+                  El centímetro es la unidad de longitud en el sistema CGS y se define como la centésima parte de un metro. El gramo es la unidad de masa y se define como la masa de un centímetro cúbico de agua a 4 °C. El segundo es la unidad de tiempo y se define de la misma manera que en el sistema MKS.</p>
+                  <table>
+                    <tr>
+                      <th>Magnitud</th>
+                      <th>Unidad</th>
+                      <th>Símbolo</th>
+                    </tr>
+                    <tr>
+                      <td>Longitud</td>
+                      <td>Centímetro</td>
+                      <td>cm</td>
+                    </tr>
+                    <tr>
+                      <td>Masa</td>
+                      <td>Gramo</td>
+                      <td>g</td>
+                    </tr>
+                    <tr>
+                      <td>Tiempo</td>
+                      <td>Segundo</td>
+                      <td>s</td>
+                    </tr>
+                    <tr>
+                      <td>Fuerza</td>
+                      <td>Dina</td>
+                      <td>dyn</td>
+                    </tr>
+                    <tr>
+                      <td>Energía</td>
+                      <td>Ergio</td>
+                      <td>erg</td>
+                    </tr>
+                    <tr>
+                      <td>Potencia</td>
+                      <td>Ergio por segundo</td>
+                      <td>erg/s</td>
+                    </tr>
+                    <tr>
+                      <td>Presión</td>
+                      <td>Bario</td>
+                      <td>ba</td>
+                    </tr>
+                    <tr>
+                      <td>Velocidad</td>
+                      <td>Centímetro por segundo</td>
+                      <td>cm/s</td>
+                    </tr>
+                    <tr>
+                      <td>Aceleración</td>
+                      <td>Gal</td>
+                      <td>Gal</td>
+                    </tr>
+                  </table>  
+                  <br>                
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Bm5IQ_6uIeM?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </section>
+              <div id="Sistema gravitacional">
+                <section id="gravitacional">
+                  <h1>Sistema gravitacional</h1>
+                  <h2>Sistema gravitacional newtoniano:</h2>
+                  <p>Se refiere al sistema de leyes y principios establecidos por Isaac Newton para describir la interacción gravitacional entre los objetos. Según este sistema, la gravedad es una fuerza de atracción mutua que actúa entre dos objetos con masa. La ley de la gravitación universal de Newton establece que la fuerza de gravedad entre dos objetos es directamente proporcional al producto de sus masas e inversamente proporcional al cuadrado de la distancia entre ellos.</p>
+                  <table>
+                    <tr>
+                      <th>Concepto</th>
+                      <th>Descripción</th>
+                    </tr>
+                    <tr>
+                      <td>Ley de gravitación</td>
+                      <td>Establece que la fuerza de gravedad entre dos objetos es directamente proporcional al producto de sus masas e inversamente proporcional al cuadrado de la distancia entre ellos.</td>
+                    </tr>
+                    <tr>
+                      <td>Fórmula</td>
+                      <td>F = G * (m1 * m2) / r^2</td>
+                    </tr>
+                    <tr>
+                      <td>Unidad de fuerza</td>
+                      <td>Newton (N)</td>
+                    </tr>
+                    <tr>
+                      <td>Principio de acción y reacción</td>
+                      <td>La fuerza de gravedad ejercida por un objeto A sobre un objeto B es igual en magnitud y opuesta en dirección a la fuerza de gravedad ejercida por el objeto B sobre el objeto A.</td>
+                    </tr>
+                  </table>                  
+                  <h2>Sistema gravitacional relativista:</h2>
+                  <p>Hace referencia a la descripción de la gravedad proporcionada por la teoría de la relatividad general de Albert Einstein. En este sistema, la gravedad se interpreta como una curvatura del espacio-tiempo causada por la presencia de masa y energía. Los objetos en movimiento siguen trayectorias influenciadas por la geometría del espacio-tiempo curvado debido a la presencia de masas. La teoría de la relatividad general ha proporcionado una comprensión más completa y precisa de la gravedad en comparación con el sistema gravitacional newtoniano.</p>
+                  <table>
+                    <tr>
+                      <th>Aspecto</th>
+                      <th>Sistema gravitacional newtoniano</th>
+                      <th>Sistema gravitacional relativista</th>
+                    </tr>
+                    <tr>
+                      <td>Fundamentos teóricos</td>
+                      <td>Basado en las leyes de Newton</td>
+                      <td>Basado en la teoría de la relatividad general de Einstein</td>
+                    </tr>
+                    <tr>
+                      <td>Naturaleza de la gravedad</td>
+                      <td>Fuerza de atracción mutua entre objetos</td>
+                      <td>Curvatura del espacio-tiempo debido a la presencia de masa/energía</td>
+                    </tr>
+                    <tr>
+                      <td>Tratamiento de la gravedad</td>
+                      <td>Leyes y principios clásicos</td>
+                      <td>Concepto geométrico y matemático</td>
+                    </tr>
+                    <tr>
+                      <td>Importancia de la velocidad</td>
+                      <td>No tiene una influencia significativa</td>
+                      <td>La velocidad afecta la curvatura del espacio-tiempo</td>
+                    </tr>
+                    <tr>
+                      <td>Aplicación en situaciones extremas</td>
+                      <td>Limitado a velocidades bajas y campos gravitacionales débiles</td>
+                      <td>Válido para velocidades altas y campos gravitacionales fuertes</td>
+                    </tr>
+                  </table>
+                  <br>          
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/9isYpDlBeX0?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </section>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -529,6 +728,97 @@
               <iframe width="560" height="315" src="https://www.youtube.com/embed/bRHRBR6AWog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
       </section>
+    </div>
+    <div id="Principios de la incertidumbre" class="container">
+      <section id="Principios de la incertidumbre">
+        <h1>Principios de la incertidumbre</h1>
+        <ol>
+          <li><b>Principio de incertidumbre de la posición y la velocidad:</b> Este principio establece que es imposible conocer simultáneamente con precisión absoluta la posición y la velocidad de una partícula. Cuanto más precisa sea la medición de la posición, mayor será la incertidumbre en la velocidad, y viceversa. Esto implica que hay un límite intrínseco en nuestra capacidad para determinar con precisión estas dos propiedades.</li>
+          <li><b>Principio de incertidumbre de la energía y el tiempo:</b> Este principio establece que es imposible conocer simultáneamente con precisión absoluta la energía de una partícula y el tiempo en que ocurre un evento. Cuanto más precisa sea la medición de la energía, mayor será la incertidumbre en el tiempo, y viceversa. Esto implica que hay una relación inherente entre la precisión con la que se puede medir la energía de una partícula y la duración durante la cual ocurre un evento.</li>
+        </ol>  
+        <p>Estos principios de la incertidumbre son fundamentales en la física cuántica y tienen implicaciones importantes en la descripción del comportamiento de partículas subatómicas. Indican que existe una inherente indeterminación en las mediciones precisas de ciertas propiedades de las partículas, y que la naturaleza misma de la realidad cuántica está sujeta a limitaciones fundamentales. Es importante destacar que los principios de la incertidumbre no se deben a limitaciones tecnológicas o de instrumentación, sino que son características intrínsecas de la naturaleza cuántica del mundo subatómico.</p>
+        <section class="image-section">
+          <div class="row">
+            <img src="https://cdn.quecuriosidades.com/wp-content/uploads/2018/12/Principio-de-incertidumbre-1024x455.jpg" alt="Formula de la incertidumbre" width="400px" height="400px">
+            <img src="https://www.lifeder.com/wp-content/uploads/2018/04/onda-transversal-partes.jpg" alt="Onda trasnversal" width="400px" height="400px">
+          </div>
+          <div class="row">
+            <img src="https://www.bing.com/th/id/OGC.1012987b510efe826b30208ad791f38f?pid=1.7&rurl=https%3a%2f%2fcdn.goconqr.com%2fuploads%2fmedia%2fimage%2f11635458%2fdesktop_61268e1e-4d45-4e1e-aeb8-aa15cee80857.GIF&ehk=SKpvZc6sjIXe915p53HVF%2f80FdUtOkdl1jzCMH98uco%3d" alt="onda-transversal-partes">
+          </div>
+        </section>
+      </section>
+    </div>
+    <div id="Escalar" class="container">
+      <section id="Escalar">
+        <h1>Magnitud Escalar</h1>
+        <p>Las magnitudes escalares son aquellas que se describen completamente mediante un número y una unidad de medida, sin necesidad de indicar una dirección o un sentido. Estas magnitudes solo tienen una dimensión y se pueden sumar o restar algebraicamente.</p>
+        <table class="container">
+          <thead>
+            <tr>
+              <th>Magnitud Escalar</th>
+              <th>Unidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Masa</td>
+              <td>Kilogramo (kg)</td>
+            </tr>
+            <tr>
+              <td>Longitud</td>
+              <td>Metro (m)</td>
+            </tr>
+            <tr>
+              <td>Tiempo</td>
+              <td>Segundo (s)</td>
+            </tr>
+            <tr>
+              <td>Temperatura</td>
+              <td>Grado Celsius (°C)</td>
+            </tr>
+            <tr>
+              <td>Velocidad</td>
+              <td>Metros por segundo (m/s)</td>
+            </tr>
+            <tr>
+              <td>Energía</td>
+              <td>Julio (J)</td>
+            </tr>
+            <tr>
+              <td>Presión</td>
+              <td>Pascal (Pa)</td>
+            </tr>
+            <tr>
+              <td>Cantidad de Sustancia</td>
+              <td>Mol (mol)</td>
+            </tr>
+            <tr>
+              <td>Ángulo</td>
+              <td>Radian (rad)</td>
+            </tr>
+            <tr>
+              <td>Intensidad Luminosa</td>
+              <td>Candela (cd)</td>
+            </tr>
+            <!-- Agrega más filas según sea necesario -->
+          </tbody>
+        </table>        
+      </section>
+    </div>
+    <div id="Vectorial" class="container">
+      <section id="magnitud-vectorial">
+        <h1>Magnitud vectorial</h1>
+        <p>Una magnitud vectorial es aquella que no solo tiene un valor numérico, sino también una dirección y un sentido específicos. En otras palabras, una magnitud vectorial se caracteriza por su magnitud (o tamaño) y su dirección. Esto implica que para describir completamente una magnitud vectorial, se deben especificar tanto su valor numérico como su orientación en un sistema de coordenadas.
+          Algunos ejemplos comunes de magnitudes vectoriales son la velocidad, la aceleración, la fuerza y el desplazamiento. Estas magnitudes requieren no solo una cantidad numérica para representar su magnitud, sino también una dirección y un sentido para indicar cómo se mueven o actúan en el espacio.
+          En contraste, las magnitudes escalares, como la temperatura, la masa y el tiempo, solo tienen un valor numérico y no tienen una dirección asociada. No importa en qué dirección se mida la temperatura, por ejemplo, ya que solo se considera su valor numérico.</p>
+          <div class="row">
+            <img src="https://i.pinimg.com/originals/22/96/16/229616ff0311d9c492aa1df772e4fe0a.png" alt="vector" width="300px" height="300px">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IrTeyyzerjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+      </section>
+    </div>
+    <div id="vector" class="container">
+      <section></section>
     </div>
 </body>
 </html>
