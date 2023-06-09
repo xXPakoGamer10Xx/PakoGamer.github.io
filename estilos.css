@@ -1,6 +1,6 @@
 /* Estilos para el cuerpo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Klavika, Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: justify;
@@ -222,7 +222,7 @@ table {
     margin: 0 auto;
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 800px) {
     iframe {
       width: 100%;
       height: auto;
@@ -268,13 +268,13 @@ table {
   width: auto\9; /* Fix for IE9 and earlier */
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .row {
     flex-direction: column;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .row {
     flex-direction: row;
   }
@@ -424,7 +424,7 @@ table {
 }
 
 /* Media query para mostrar el menú en pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .navbar-menu {
       position: absolute;
       top: 100%;
@@ -446,7 +446,11 @@ table {
 img {
   width: 100%;
   height: auto;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 400px;
+  max-height: 400px;
   object-fit: contain;
+}
+
+.espacio {
+  margin-top: 2cm;
 }
