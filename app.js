@@ -136,3 +136,29 @@ navbarToggle.addEventListener('click', function() {
   this.classList.toggle('open');
   navbarMenu.classList.toggle('show');
 });
+
+//Calculadora de coloumb
+function calcularFuerza() {
+  // Obtener los valores ingresados por el usuario
+  var carga1 = parseFloat(document.getElementById("carga1").value);
+  var carga2 = parseFloat(document.getElementById("carga2").value);
+  var distancia = parseFloat(document.getElementById("distancia").value);
+
+  // Calcular la fuerza según la Ley de Coulomb
+  var k = 9 * Math.pow(10, 9); // Constante de Coulomb
+  var fuerza = (k * (carga1 * carga2) / Math.pow(distancia, 2)) * Math.pow(10, -3);
+
+  // Mostrar el resultado en la celda de resultado
+  var resultadoElement = document.getElementById("resultado3");
+  resultadoElement.innerHTML = "La fuerza es: " + fuerza.toFixed(3) + " N";
+
+  // Determinar si es atracción o repulsión
+  if (fuerza > 0) {
+    resultadoElement.innerHTML += " (Atracción)";
+  } else if (fuerza < 0) {
+    resultadoElement.innerHTML += " (Repulsión)";
+  }
+}
+
+//Ocultar barra 
+

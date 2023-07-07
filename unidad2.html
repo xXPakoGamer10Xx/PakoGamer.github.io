@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fonts/klavika.css">
+    <link rel="icon" type="image/png" href="https://media.licdn.com/dms/image/C4E0BAQFEE29kEI9Bcw/company-logo_200_200/0/1571181450340?e=2147483647&v=beta&t=nktHEHP0fuvHELz-kwb6tC9b8V2GnVgYS4s_Gp9x0_A">
+    <title>Fisica</title>
+</head>
+<body>
+  <script src="app.js"></script>
+  <button id="scrollButton" onclick="scrollToTop()">&#8593;</button>
+  <div class="navbar">
+  <button class="navbar-toggle" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+    <div class="navbar-logo">
+      <img src="https://media.licdn.com/dms/image/C4E0BAQFEE29kEI9Bcw/company-logo_200_200/0/1571181450340?e=2147483647&v=beta&t=nktHEHP0fuvHELz-kwb6tC9b8V2GnVgYS4s_Gp9x0_A" alt="Logo">
+    </div>
+    <div class="navbar-menu" id="navbarMenu">
+        <center><h1>Índice</h1></center>
+          <h2>Unidad 1</h2>
+          <ul>
+            <li ><a href="index.html#que es la fisica">¿Qué es la Física?</a></li>
+            <li><a href="index.html#como se divide la fisica">División de la Física</a></li>
+            <li><a href="index.html#que es la ciencia">Concepto de Ciencia</a></li>
+            <li><a href="index.html#que es la tecnologia">Concepto de Tecnología</a></li>
+            <li><a href="index.html#que es la investigacion">Concepto de Investigación</a></li>
+            <li><a href="index.html#que es el metodo cientifico">¿Qué es el Método Científico?</a></li>
+            <li><a href="index.html#sistema de unidades">Tablas de unidades en los diferentes tipos de sistemas</a></li>
+            <li><a href="index.html#notacion cientifica">Notacion cientifica</a></li>
+            <li><a href="index.html#magnitud">Magnitud</a></li>
+            <li><a href="index.html#clasificacion">Clasificacion de magnitudes</a></li>
+            <li><a href="index.html#derivadas">Magnitudes derivadas</a></li>
+            <li><a href="index.html#intensidad-luminosa">Intensidad luminosa</a></li>
+            <li><a href="index.html#estereorradian">Estereorradián</a></li>
+            <li><a href="index.html#Principios de la incertidumbre">Principio de incertidumbre</a></li>
+            <li><a href="index.html#Escalar">Escalar</a></li>
+            <li><a href="index.html#magnitud-vectorial">Magnitud Vectorial</a></li>
+            <li><a href="index.html#vector">Partes del vector</a></li>
+            <li><a href="index.html#suma">Suma de vectores</a></li>
+          </ul>
+        <h2>Unidad 2</h2>
+        <ul>
+          <li ><a href="unidad2.html#columb">Ley de Coulomb</a></li>
+          <li ><a href="unidad2.html#1ra-ley-de-newton">1ra ley de Newton</a></li>
+          <li><a href="unidad2.html#2da-ley-de-newton">2da ley de Newton</a></li>
+        </ul>
+      </div>
+</div>
+</div>
+<div id="Calculadora de columb" class="container">
+  <section id="columb">
+    <h1>Ley de Coulomb</h1>
+    <p>La Ley de Coulomb es una ley fundamental de la física que describe la interacción electrostática entre cargas eléctricas. Fue formulada por el físico francés Charles-Augustin de Coulomb en el siglo XVIII.
+      La ley establece que la fuerza de atracción o repulsión entre dos cargas eléctricas es directamente proporcional al producto de las magnitudes de las cargas e inversamente proporcional al cuadrado de la distancia entre ellas. Matemáticamente, se expresa de la siguiente manera:
+      <br>
+      <img src="https://th.bing.com/th/id/OIP.fctUBg8pOhdpiVd3KBZ-7QAAAA?pid=ImgDet&rs=1">
+      <p>Donde:
+        <ul>
+          <li>F es la fuerza de interacción eléctrica entre las dos cargas.</li>
+          <li>k es la constante de Coulomb, que tiene un valor de aproximadamente 9 × 10^9 N·m^2/C^2.</li>
+          <li>q1 y q2 son las magnitudes de las cargas eléctricas.</li>
+          <li>r es la distancia entre las cargas.</li>
+          <li>La fuerza resultante tiene la misma dirección que la línea que conecta las dos cargas y su sentido depende del tipo de carga. Si las cargas tienen el mismo signo (ambas positivas o ambas negativas), se repelen entre sí, lo que se conoce como fuerza de repulsión. Si las cargas tienen signos opuestos (una positiva y una negativa), se atraen mutuamente, lo que se conoce como fuerza de atracción.</li>
+        </ul>
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UgRJEdb-CoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+    <table id="calculadora-coulomb" class="container">
+      <tr>
+        <th colspan="2" id="titulo-coulomb"><h1>Calculadora de la Ley de Coulomb</h1></th>
+      </tr>
+      <tr>
+        <th><label for="carga1">Carga 1 (C):</label></th>
+        <td><input type="number" id="carga1" step="any" required></td>
+      </tr>
+      <tr>
+        <th><label for="carga2">Carga 2 (C):</label></th>
+        <td><input type="number" id="carga2" step="any" required></td>
+      </tr>
+      <tr>
+        <th><label for="distancia">Distancia (m):</label></th>
+        <td><input type="number" id="distancia" step="any" required></td>
+      </tr>
+      <tr>
+        <th colspan="2"><button onclick="calcularFuerza()">Calcular</button></th>
+      </tr>
+      <tr>
+        <th colspan="2" id="resultado3"></th>
+      </tr>
+    </table>
+  </section>
+</div>
+<div id="1ra ley de Newton" class="container">
+  <section id="1ra-ley-de-newton">
+    <h1>1ra ley de Newton</h1>
+    <p>La primera ley de Newton, también conocida como la ley de la inercia, establece que un objeto en reposo permanecerá en reposo y un objeto en movimiento continuará en movimiento con velocidad constante en línea recta, a menos que una fuerza externa actúe sobre él.
+      Esta ley se basa en el concepto de la inercia, que es la tendencia natural de los objetos a resistir cambios en su estado de movimiento. Según la primera ley de Newton, si no hay fuerzas externas que actúen sobre un objeto, este mantendrá su estado de movimiento actual, ya sea en reposo o en movimiento rectilíneo uniforme.
+      En otras palabras, un objeto en reposo tiende a permanecer en reposo y un objeto en movimiento tiende a continuar moviéndose sin cambios en su velocidad o dirección, a menos que una fuerza externa se aplique sobre él. Esta fuerza externa puede acelerar, desacelerar o cambiar la dirección del objeto.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BwpvOr7OyrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+</div>
+<div id="2da ley de Newton" class="container">
+  <section id="2da-ley-de-newton">
+    <h1>2da ley de Newton</h1>
+    <p>La segunda ley de Newton, también conocida como la ley de la fuerza o la ley fundamental del movimiento, establece la relación entre la fuerza aplicada a un objeto, su masa y la aceleración que experimenta. Esta ley describe cómo un objeto cambia su estado de movimiento cuando se aplica una fuerza sobre él.
+      La formulación matemática de la segunda ley de Newton es:</p>
+      <img src="https://th.bing.com/th/id/R.2984de0391b12e44971489a0a3a71576?rik=OwL4%2fX9YCOjoZg&riu=http%3a%2f%2fru.convdocs.org%2fpars_docs%2frefs%2f113%2f112743%2f112743_html_m3f4eeda7.gif&ehk=2Hq%2bP5pJAZwGw6tofh9Lqh2MpvgcRmT%2bVyAsJMnsuAM%3d&risl=&pid=ImgRaw&r=0">
+      <p>Donde:
+        <ul>
+          <li>F es la fuerza neta aplicada al objeto, medida en newtons (N).</li>
+          <li>m es la masa del objeto, medida en kilogramos (kg).</li>
+          <li>a es la aceleración del objeto, medida en metros por segundo al cuadrado (m/s²).</li>
+        </ul>
+        La ley establece que la aceleración de un objeto es directamente proporcional a la fuerza neta aplicada y es inversamente proporcional a su masa. En otras palabras, si se aplica una fuerza mayor a un objeto de masa constante, este experimentará una aceleración mayor. Si se aplica la misma fuerza a objetos con masas diferentes, el objeto más ligero tendrá una aceleración mayor que el objeto más pesado.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7TCiNmbRqBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+</div>
+<div id="btn-container">
+  <a href="index.html" id="btn-unidad2">Ir a Unidad 1</a>
+</div>
+</body>
+</html>

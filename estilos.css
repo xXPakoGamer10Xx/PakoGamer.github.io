@@ -454,3 +454,70 @@ img {
 .espacio {
   margin-top: 2cm;
 }
+
+
+input[type="submit"] {
+  margin-left: 150px;
+}
+
+#result {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Calculadora de Coulomb */
+#calculadora-coulomb {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#calculadora-coulomb th, #calculadora-coulomb td {
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+  background: none;
+}
+
+#calculadora-coulomb h1 {
+  text-align: center;
+  font-size: 24px;
+  color: black; /* Color de letra negro */
+}
+
+#calculadora-coulomb input[type="number"] {
+  width: 100%;
+}
+
+#calculadora-coulomb button {
+  display: block;
+  margin: 0 auto;
+}
+
+#calculadora-coulomb #resultado3 {
+  text-align: center;
+  color: black; /* Color de letra negro */
+}
+
+/*boton de cambio de pagina */
+#btn-container {
+  text-align:center;
+}
+
+/* Estilos específicos para el botón */
+#btn-unidad2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btn-unidad2:hover {
+  background-color: #45a049;
+}
