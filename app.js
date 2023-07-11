@@ -108,22 +108,24 @@ function obtenerFactorConversion(unidadEntrada, unidadSalida) {
 
 //Scroll para subir la pagina
 var scrollButton = document.getElementById("scrollButton");
+window.addEventListener("scroll", toggleScrollButton);
 
-window.addEventListener("scroll", function() {
-  if (window.pageYOffset > 0) {
-    scrollButton.classList.remove("hidden");
+function toggleScrollButton() {
+  if (window.pageYOffset > 20) {
+    scrollButton.style.opacity = "1";
+    scrollButton.style.pointerEvents = "auto";
   } else {
-    scrollButton.classList.add("hidden");
+    scrollButton.style.opacity = "0";
+    scrollButton.style.pointerEvents = "none";
   }
-});
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
 }
 
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+
+//Barra de menu
 function toggleMenu() {
   var navbarMenu = document.getElementById("navbarMenu");
   navbarMenu.classList.toggle("show");
