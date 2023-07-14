@@ -1,233 +1,235 @@
 /* Estilos para el cuerpo */
 body {
-    font-family: Klavika, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: justify;
-  }
-  
-  /* Estilos para el encabezado */
-  #indice {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  #indice h1, #indice h2 {
-    margin: 0;
-  }
-  
-  #indice ul {
-    list-style: none;
-    margin: 10px 0;
-    padding: 0;
-  }
-  
-  #indice li {
-    margin: 5px 0;
-  }
-  
-  #indice li a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  #indice li a:hover {
-    color: #000;
-  }
-  
-  /* Estilos para los títulos */
-  h1, h2, h3 {
-    color: #333;
-    font-weight: bold;
-    margin: 0;
-    padding: 10px 0;
-  }
-  
-  /* Estilos para los párrafos */
-  p {
-    margin: 0;
-    padding: 0 0 20px 0;
-  }
-  
-  /* Estilos para los enlaces */
-  a {
-    color: #0072C6;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+  font-family: Klavika, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+/* Estilos para el encabezado */
+#indice {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#indice h1,
+#indice h2 {
+  margin: 0;
+}
+
+#indice ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+#indice li {
+  margin: 5px 0;
+}
+
+#indice li a {
+  color: #333;
+  text-decoration: none;
+}
+
+#indice li a:hover {
+  color: #000;
+}
+
+/* Estilos para los títulos */
+h1,
+h2,
+h3 {
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Estilos para los párrafos */
+p {
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #0072C6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 /* Estilo para todas las tablas */
 table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 0 auto;
-  }
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
 
-  /* Estilo de negritas para el titulo de la tabla */
-  caption {
-    font-weight: bold;
-  }
-  
-  /* Estilo para las celdas de la tabla */
-  td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  /* Estilo para la fila de encabezado de la tabla */
-  th {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  /* Estilo para la fila de la tabla al pasar el mouse sobre ella */
-  tr:hover {
-    background-color: #f5f5f5;
-  }
-  
-  /* Estilo para la primera columna de la tabla */
-  td:first-child {
-    font-weight: bold;
-  }
-  
-  /* Estilo para la tabla de sistemas de unidades */
-  #SI table {
-    background-color: #f9f9f9;
-  }
-  
-  /* Estilo para la tabla de sistema ingles */
-  #sistema_ingles table {
-    background-color: #e0e0e0;
-  }
-  
-  .table-container {
+/* Estilo de negritas para el título de la tabla */
+caption {
+  font-weight: bold;
+}
+
+/* Estilo para las celdas de la tabla */
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Estilo para la fila de encabezado de la tabla */
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Estilo para la fila de la tabla al pasar el mouse sobre ella */
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Estilo para la primera columna de la tabla */
+td:first-child {
+  font-weight: bold;
+}
+
+/* Estilos para las tablas de sistemas de unidades */
+#SI table {
+  background-color: #f9f9f9;
+}
+
+#sistema_ingles table {
+  background-color: #e0e0e0;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.table-container table {
+  width: 100%;
+  table-layout: auto;
+}
+
+.table-container::-webkit-scrollbar {
+  height: 12px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#conversor-de-notacion {
+  margin: 20px auto;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+td {
+  padding: 10px;
+}
+
+input[type="number"] {
+  width: 95%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Ocultar flechas de incremento y decremento en campos de entrada numérica */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+span {
+  font-weight: bold;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  /* Estilos específicos para dispositivos móviles */
+
+  /* Ajustes de la tabla */
+  #tableresponsive-table {
+    width: 100%;
     overflow-x: auto;
-    max-width: 100%;
-  }
-  
-  .table-container table {
-    width: 100%;
-    table-layout: auto;
-  }
-  
-  .table-container::-webkit-scrollbar {
-    height: 12px;
-  }
-  
-  .table-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-  }
-  
-  .table-container::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 6px;
-  }
-  
-  .table-container::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }  
-
-  #conversor-de-notacion {
-    margin: 20px auto;
-    width: 400px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  table {
-    width: 100%;
-    margin-top: 20px;
-  }
-  
-  td {
-    padding: 10px;
-  }
-  
-  input[type="number"] {
-    width: 95%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  /* Ocultar flechas de incremento y decremento en campos de entrada numérica */
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  
-  button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  span {
-    font-weight: bold;
-  }
-  
-  td:last-child {
-    text-align: center;
   }
 
-  @media only screen and (max-width: 500px) {
-    /* Estilos específicos para dispositivos móviles */
-  
-    /* Ajustes de la tabla */
-    #tableresponsive-table {
-      width: 100%;
-      overflow-x: auto;
-    }
-
-    .responsive-table {
-      width: 80%;
-      margin: 0 auto;
-      font-size: 14px;
-      font-family: Arial, sans-serif;
-    }
-
-    .responsive-table .responsive-table {
-      overflow-x: auto;
-      padding-bottom: 16px; /* Ajusta el espacio inferior según tu preferencia */
-    }
-    
-    .responsive-table .responsive-table{
-      transform: scale(0.8); /* Ajusta la escala según tu preferencia */
-      transform-origin: top; /* Ajusta el origen de la transformación según tu preferencia */
-    }
-
-  }
-
-  iframe {
-    display: block;
+  .responsive-table {
+    width: 80%;
     margin: 0 auto;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
   }
-  
-  @media (max-width: 800px) {
-    iframe {
-      width: 100%;
-      height: auto;
-    }
+
+  .responsive-table .responsive-table {
+    overflow-x: auto;
+    padding-bottom: 16px; /* Ajusta el espacio inferior según tu preferencia */
   }
+
+  .responsive-table .responsive-table{
+    transform: scale(0.8); /* Ajusta la escala según tu preferencia */
+    transform-origin: top; /* Ajusta el origen de la transformación según tu preferencia */
+  }
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
 
 #scrollButton {
   position: fixed;
@@ -430,12 +432,12 @@ table {
 /* Media query para mostrar el menú en pantallas pequeñas */
 @media (max-width: 900px) {
   .navbar-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
   }
 }
 
@@ -459,7 +461,6 @@ img {
   margin-top: 2cm;
 }
 
-
 input[type="submit"] {
   margin-left: 150px;
 }
@@ -470,13 +471,14 @@ input[type="submit"] {
   margin-top: 20px;
 }
 
-/*Calculadora de Coulomb */
+/* Calculadora de Coulomb */
 #calculadora-coulomb {
   border-collapse: collapse;
   margin: 0 auto;
 }
 
-#calculadora-coulomb th, #calculadora-coulomb td {
+#calculadora-coulomb th,
+#calculadora-coulomb td {
   padding: 5px;
   text-align: center;
   border-bottom: 1px solid #ddd;
@@ -504,9 +506,9 @@ input[type="submit"] {
   color: black; /* Color de letra negro */
 }
 
-/*boton de cambio de pagina */
+/* Botón de cambio de página */
 #btn-container {
-  text-align:center;
+  text-align: center;
 }
 
 /* Estilos específicos para el botón */
@@ -525,3 +527,68 @@ input[type="submit"] {
 #btn-unidad2:hover {
   background-color: #45a049;
 }
+
+/*Ocultar los temas y ocultar barra de desplazamiento */
+#navbarMenu ul {
+  display: none;
+  overflow-y: auto;
+}
+
+#navbarMenu ul::-webkit-scrollbar {
+  width: 5px;
+}
+
+#navbarMenu ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#navbarMenu ul::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/*Portada*/
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  z-index: 2;
+}
+
+.text-overlay h1 {
+  margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Color de la franja de fondo (negro con opacidad) */
+  z-index: 1;
+}
+

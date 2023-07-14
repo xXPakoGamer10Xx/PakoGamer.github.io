@@ -162,5 +162,25 @@ function calcularFuerza() {
   }
 }
 
-//Ocultar barra 
+//Submenus
+function showSubMenu(subMenuId) {
+  var subMenu = document.getElementById(subMenuId);
+  subMenu.style.display = "block";
+}
 
+function hideSubMenu(subMenuId) {
+  var subMenu = document.getElementById(subMenuId);
+  subMenu.onmouseout = function (event) {
+    if (!subMenu.contains(event.relatedTarget)) {
+      subMenu.style.display = "none";
+    }
+  };
+}
+
+//Ocultar la barra de deslizamiento
+function showSubMenu(subMenuId) {
+  var subMenu = document.getElementById(subMenuId);
+  subMenu.style.display = "block";
+  subMenu.style.overflowY = "scroll";
+  subMenu.style.scrollbarColor = "#fff #fff"; // Cambia el color de la barra de desplazamiento según tus necesidades
+}
