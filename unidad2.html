@@ -15,13 +15,13 @@
   <script src="app.js"></script>
   <button id="scrollButton" onclick="scrollToTop()">&#8593;</button>
   <div class="navbar">
-  <button class="navbar-toggle" onclick="toggleMenu()">
+  <button class="navbar-toggle" onclick="toggleMenu()" title="boton de inicio">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
     </button>
     <div class="navbar-logo">
-      <img src="https://media.licdn.com/dms/image/C4E0BAQFEE29kEI9Bcw/company-logo_200_200/0/1571181450340?e=2147483647&v=beta&t=nktHEHP0fuvHELz-kwb6tC9b8V2GnVgYS4s_Gp9x0_A" alt="Logo">
+      <img src="https://media.licdn.com/dms/image/C4E0BAQFEE29kEI9Bcw/company-logo_200_200/0/1571181450340?e=2147483647&v=beta&t=nktHEHP0fuvHELz-kwb6tC9b8V2GnVgYS4s_Gp9x0_A" title="Logo" alt="Logo">
     </div>
     <div class="navbar-menu" id="navbarMenu">
         <center><h1>Índice</h1></center>
@@ -51,6 +51,9 @@
           <li ><a href="unidad2.html#columb">Ley de Coulomb</a></li>
           <li ><a href="unidad2.html#1ra-ley-de-newton">1ra ley de Newton</a></li>
           <li><a href="unidad2.html#2da-ley-de-newton">2da ley de Newton</a></li>
+          <li><a href="unidad2.html#3ra-ley-de-newton">3ra ley de Newton</a></li>
+          <li><a href="unidad2.html#triangulos-notables">Triangulos notables</a></li>
+          <li><a href="unidad2.html#Ley-de-hook">Ley de hooks</a></li>
         </ul>
       </div>
 </div>
@@ -61,7 +64,7 @@
     <p>La Ley de Coulomb es una ley fundamental de la física que describe la interacción electrostática entre cargas eléctricas. Fue formulada por el físico francés Charles-Augustin de Coulomb en el siglo XVIII.
       La ley establece que la fuerza de atracción o repulsión entre dos cargas eléctricas es directamente proporcional al producto de las magnitudes de las cargas e inversamente proporcional al cuadrado de la distancia entre ellas. Matemáticamente, se expresa de la siguiente manera:
       <br>
-      <img src="https://th.bing.com/th/id/OIP.fctUBg8pOhdpiVd3KBZ-7QAAAA?pid=ImgDet&rs=1">
+      <img src="https://th.bing.com/th/id/OIP.fctUBg8pOhdpiVd3KBZ-7QAAAA?pid=ImgDet&rs=1" title="Ley de columb">
       <p>Donde:
         <ul>
           <li>F es la fuerza de interacción eléctrica entre las dos cargas.</li>
@@ -78,11 +81,11 @@
         <th colspan="2" id="titulo-coulomb"><h1>Calculadora de la Ley de Coulomb</h1></th>
       </tr>
       <tr>
-        <th><label for="carga1">Carga 1 (C):</label></th>
+        <th><label for="carga1">Carga 1 (µC):</label></th>
         <td><input type="number" id="carga1" step="any" required></td>
       </tr>
       <tr>
-        <th><label for="carga2">Carga 2 (C):</label></th>
+        <th><label for="carga2">Carga 2 (µC):</label></th>
         <td><input type="number" id="carga2" step="any" required></td>
       </tr>
       <tr>
@@ -107,12 +110,12 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/BwpvOr7OyrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </section>
 </div>
-<div id="2da ley de Newton" class="container">
+<div id="2da-ley-de-Newton" class="container">
   <section id="2da-ley-de-newton">
     <h1>2da ley de Newton</h1>
     <p>La segunda ley de Newton, también conocida como la ley de la fuerza o la ley fundamental del movimiento, establece la relación entre la fuerza aplicada a un objeto, su masa y la aceleración que experimenta. Esta ley describe cómo un objeto cambia su estado de movimiento cuando se aplica una fuerza sobre él.
       La formulación matemática de la segunda ley de Newton es:</p>
-      <img src="https://th.bing.com/th/id/R.2984de0391b12e44971489a0a3a71576?rik=OwL4%2fX9YCOjoZg&riu=http%3a%2f%2fru.convdocs.org%2fpars_docs%2frefs%2f113%2f112743%2f112743_html_m3f4eeda7.gif&ehk=2Hq%2bP5pJAZwGw6tofh9Lqh2MpvgcRmT%2bVyAsJMnsuAM%3d&risl=&pid=ImgRaw&r=0">
+      <img src="https://th.bing.com/th/id/R.2984de0391b12e44971489a0a3a71576?rik=OwL4%2fX9YCOjoZg&riu=http%3a%2f%2fru.convdocs.org%2fpars_docs%2frefs%2f113%2f112743%2f112743_html_m3f4eeda7.gif&ehk=2Hq%2bP5pJAZwGw6tofh9Lqh2MpvgcRmT%2bVyAsJMnsuAM%3d&risl=&pid=ImgRaw&r=0" title="2da-ley-de-Newton">
       <p>Donde:
         <ul>
           <li>F es la fuerza neta aplicada al objeto, medida en newtons (N).</li>
@@ -123,6 +126,84 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7TCiNmbRqBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </section>
 </div>
+<div id="3ra ley de Newton" class="container">
+  <section id="3ra-ley-de-newton">
+    <h1>3ra ley de Newton</h1>
+    <p>"Para cada acción, hay una reacción igual y opuesta".</p>
+    <p>Esta ley se refiere a la interacción entre dos cuerpos o objetos en un sistema cerrado. Cuando un cuerpo A ejerce una fuerza sobre un cuerpo B, este último responde con una fuerza igual en magnitud pero en dirección opuesta a la de la acción original. Es decir, las fuerzas entre dos objetos siempre aparecen en pares, uno es el "par de acción" y el otro es el "par de reacción".</p>
+    <p>Esta ley se aplica en numerosas situaciones cotidianas y es esencial para entender el funcionamiento de la física en distintos contextos, desde el movimiento de objetos en el espacio hasta el funcionamiento de motores y cohetes. Además, es importante destacar que estas fuerzas siempre actúan sobre cuerpos diferentes, por lo que no se anulan entre sí.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ttPdmwVuaXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+</div>
+<div id="Triangulos notables" class="container">
+  <section id="triangulos-notables">
+    <h1>Triangulos notables</h1>
+    <p>Un triángulo notable es un triángulo que tiene características especiales que lo hacen fácil de calcular. Los cuatro tipos de triángulos notables son:   </p>
+    <ul>
+      <h2>Triángulos 30-60-90: </h2>
+      <li>Estos triángulos tienen un ángulo de 90 grados y otros dos ángulos de 30 y 60 grados. Los lados del triángulo están en una proporción de 1:√3:2.</li>
+      <center><img src="https://th.bing.com/th/id/R.253a3f235c306e01d09f4fc03456cabc?rik=Xj5zy46czagoVg&pid=ImgRaw&r=0" title="Triangulo 30 60 y 90"></center>
+      <h2>Triangulo de 45 - 45 - 90: </h2>
+      <li>Estos triángulos tienen tres ángulos de 45 grados. Los lados del triángulo están en una proporción de 1:1:√2.</li>
+      <center><img src="https://www.voovers.com/wp-content/uploads/2020/05/45-45-90-triangle.jpg" title="trinagulo de 45 45 90"></center>
+      <h2>Triangulo pitagorico:</h2>
+      <li>Estos triángulos tienen un ángulo recto y los otros dos ángulos suman 90 grados. Los lados del triángulo están en una proporción de a:b:c, donde a es el cateto más corto, b es el cateto más largo y c es la hipotenusa. La hipotenusa es siempre la diagonal más larga del triángulo y los catetos son los otros dos lados.</li>
+      <center><img src="https://th.bing.com/th/id/OIP.mNlGuCssHfnUyT6Pn7b4_AHaEu?pid=ImgDet&rs=1" title="Triangulo pitagorico"></center>
+      <h2>Triángulos rectángulos especiales:</h2>
+      <li>Estos triángulos son triángulos rectángulos con lados que tienen relaciones especiales entre sí. Por ejemplo, el triángulo rectángulo 3-4-5 tiene un cateto más corto de 3 unidades, un cateto más largo de 4 unidades y una hipotenusa de 5 unidades.</li>
+      <center><img src="https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3Aa7845634a02514dc53646d2a4ee309353bed440be6295773db740ab3%2BIMAGE_TINY%2BIMAGE_TINY.1" title="Triangulo rectangulo especial"></center>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5IzsnFBzwOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+</div>
+<div id="Ley-de-hook" class="container">
+  <section id="Ley-de-hook">
+    <h2>¿Que es la ley de hook?</h2>
+    <p>La ley de Hooke es una ley fundamental de la física que describe el comportamiento elástico de los materiales, especialmente en el contexto de las fuerzas y deformaciones en un resorte. Esta ley lleva el nombre del científico inglés Robert Hooke, quien la enunció por primera vez en 1676.</p>
+    <p>La ley de Hooke establece lo siguiente:"La fuerza necesaria para extender o comprimir un resorte es directamente proporcional a la distancia de su elongación o compresión". Matemáticamente, la ley de Hooke se puede expresar mediante la siguiente fórmula:</p>
+    <ul>
+      <li>F es la fuerza aplicada sobre el resorte (en newtons, N).</li>
+      <li>k es la constante del resorte o constante de elasticidad (en newtons por metro, N/m). Representa la rigidez del resorte y determina cuánta fuerza es necesaria para producir una unidad de deformación.</li>
+      <li>x es la elongación o compresión del resorte respecto a su posición de equilibrio (en metros, m).</li>
+    </ul>
+    <center><img src="https://th.bing.com/th/id/OIP.7emf0RpbxbUkt7Et4hTcJAHaEp?pid=ImgDet&rs=1" title="ley de hoook"></center>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/npxZ-A2WSTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+    <h2>Calculadora de hooks:</h2>
+    <table id="calculadora-hooke" class="container">
+      <tr>
+        <th colspan="2" id="titulo-hooke"><h1>Calculadora de la Ley de Hooke</h1></th>
+      </tr>
+      <tr>
+        <th><label for="constante">Constante del resorte (k en N/m):</label></th>
+        <td><input type="number" id="constante" step="any" required></td>
+      </tr>
+      <tr>
+        <th><label for="deformacion">Deformación del resorte (x en m):</label></th>
+        <td><input type="number" id="deformacion" step="any" required></td>
+      </tr>
+      <tr>
+        <th colspan="2"><button onclick="calcularFuerza()">Calcular</button></th>
+      </tr>
+      <tr>
+        <th colspan="2" id="resultado2"></th>
+      </tr>
+    </table>
+    <br>
+  </section>
+</div>
+<br>
+<div id="Ejemplos de ley de hooks" class="container">
+  <h2>Ejemplos de ejercicios de ley de hook:</h2>
+  <div id="Ejemplos" class="collage">
+    <img src="https://i.ytimg.com/vi/76soiidoSaw/maxresdefault.jpg" alt="Image 1">
+    <img src="https://i.ytimg.com/vi/3CI-oVQLDmg/maxresdefault.jpg" alt="Image 2">
+    <img src="https://i.ytimg.com/vi/GE8e0uzGe_0/maxresdefault.jpg" alt="Image 3">
+    <img src="https://i.ytimg.com/vi/82Go3lCIYhg/maxresdefault.jpg" alt="Image 4">
+  </div>
+</div>
+<br>
 <div id="btn-container">
   <a href="index.html" id="btn-unidad2">Ir a Unidad 1</a>
 </div>

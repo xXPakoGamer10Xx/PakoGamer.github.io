@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: justify;
+  background-color: #C9C9C9;
 }
 
 /* Estilos para el encabezado */
@@ -552,12 +553,14 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  z-index: -1;
 }
 
 .image-container {
   position: relative;
   max-width: 100%;
   width: 100%;
+  z-index: -1;
 }
 
 .image-container img {
@@ -565,6 +568,7 @@ input[type="submit"] {
   width: 100%;
   height: auto;
   object-fit: cover;
+  z-index: -1;
 }
 
 .text-overlay {
@@ -575,11 +579,12 @@ input[type="submit"] {
   text-align: center;
   color: #fff;
   font-size: 24px;
-  z-index: 2;
+  z-index: -1;
 }
 
 .text-overlay h1 {
   margin: 0;
+  z-index: -1;
 }
 
 .overlay {
@@ -588,7 +593,96 @@ input[type="submit"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Color de la franja de fondo (negro con opacidad) */
-  z-index: 1;
+  background-color: rgba(255, 0, 0, 0.2); /* Color de la franja de fondo (negro con opacidad) */
+  z-index: -1;
 }
 
+@media (max-width: 768px) {
+  .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .image-container {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    z-index: -1;
+  }
+
+  .text-overlay h1 {
+    margin: 0;
+    z-index: -1;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.2); /* Color de la franja de fondo (negro con opacidad) */
+    z-index: -1;
+  }
+}
+
+/*Caluladora de hooks*/
+#calculadora-hooke {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#calculadora-hooke th,
+#calculadora-hooke td {
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #000;
+  background: none;
+}
+
+#calculadora-hooke h1 {
+  text-align: center;
+  font-size: 24px;
+  color: black; /* Color de letra negro */
+}
+
+#calculadora-hooke input[type="number"] {
+  width: 100%;
+}
+
+#calculadora-hooke button {
+  display: block;
+  margin: 0 auto;
+}
+
+#calculadora-hooke #resultado2 {
+  text-align: center;
+  color: black; /* Color de letra negro */
+}
+
+.collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Alineación horizontal centrada */
+}

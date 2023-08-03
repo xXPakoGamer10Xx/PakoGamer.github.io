@@ -15,7 +15,7 @@
   <script src="app.js"></script>
   <button id="scrollButton" onclick="scrollToTop()">&#8593;</button>
   <div class="navbar">
-  <button class="navbar-toggle" onclick="toggleMenu()">
+  <button class="navbar-toggle" onclick="toggleMenu()" title="navbar">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -24,35 +24,38 @@
       <img src="https://media.licdn.com/dms/image/C4E0BAQFEE29kEI9Bcw/company-logo_200_200/0/1571181450340?e=2147483647&v=beta&t=nktHEHP0fuvHELz-kwb6tC9b8V2GnVgYS4s_Gp9x0_A" alt="Logo">
     </div>
     <div class="navbar-menu" id="navbarMenu">
-        <center><h1>Índice</h1></center>
-        <h2 onmouseover="showSubMenu('unidad1SubMenu')" onmouseout="hideSubMenu('unidad1SubMenu')">Unidad 1</h2>
-          <ul id="unidad1SubMenu">
-            <li ><a href="#que es la fisica">¿Qué es la Física?</a></li>
-            <li><a href="#como se divide la fisica">División de la Física</a></li>
-            <li><a href="#que es la ciencia">Concepto de Ciencia</a></li>
-            <li><a href="#que es la tecnologia">Concepto de Tecnología</a></li>
-            <li><a href="#que es la investigacion">Concepto de Investigación</a></li>
-            <li><a href="#que es el metodo cientifico">¿Qué es el Método Científico?</a></li>
-            <li><a href="#sistema de unidades">Tablas de unidades en los diferentes tipos de sistemas</a></li>
-            <li><a href="#notacion cientifica">Notacion cientifica</a></li>
-            <li><a href="#magnitud">Magnitud</a></li>
-            <li><a href="#clasificacion">Clasificacion de magnitudes</a></li>
-            <li><a href="#derivadas">Magnitudes derivadas</a></li>
-            <li><a href="#intensidad-luminosa">Intensidad luminosa</a></li>
-            <li><a href="#estereorradian">Estereorradián</a></li>
-            <li><a href="#Principios de la incertidumbre">Principio de incertidumbre</a></li>
-            <li><a href="#Escalar">Escalar</a></li>
-            <li><a href="#magnitud-vectorial">Magnitud Vectorial</a></li>
-            <li><a href="#vector">Partes del vector</a></li>
-            <li><a href="#suma">Suma de vectores</a></li>
-          </ul>
-          <h2 onmouseover="showSubMenu('unidad2SubMenu')" onmouseout="hideSubMenu('unidad2SubMenu')">Unidad 2</h2>
-        <ul id="unidad2SubMenu">
-          <li ><a href="unidad2.html#columb">Ley de Coulomb</a></li>
-          <li ><a href="unidad2.html#1ra-ley-de-newton">1ra ley de Newton</a></li>
-          <li><a href="unidad2.html#2da-ley-de-newton">2da ley de Newton</a></li>
-        </ul>
-      </div>
+      <center><h1>Índice</h1></center>
+      <h2 onmouseover="showSubMenu('unidad1SubMenu')" onmouseout="hideSubMenu('unidad1SubMenu')">Unidad 1</h2>
+      <ul id="unidad1SubMenu">
+        <li ><a href="index.html#que es la fisica">¿Qué es la Física?</a></li>
+        <li><a href="index.html#como se divide la fisica">División de la Física</a></li>
+        <li><a href="index.html#que es la ciencia">Concepto de Ciencia</a></li>
+        <li><a href="index.html#que es la tecnologia">Concepto de Tecnología</a></li>
+        <li><a href="index.html#que es la investigacion">Concepto de Investigación</a></li>
+        <li><a href="index.html#que es el metodo cientifico">¿Qué es el Método Científico?</a></li>
+        <li><a href="index.html#sistema de unidades">Tablas de unidades en los diferentes tipos de sistemas</a></li>
+        <li><a href="index.html#notacion cientifica">Notacion cientifica</a></li>
+        <li><a href="index.html#magnitud">Magnitud</a></li>
+        <li><a href="index.html#clasificacion">Clasificacion de magnitudes</a></li>
+        <li><a href="index.html#derivadas">Magnitudes derivadas</a></li>
+        <li><a href="index.html#intensidad-luminosa">Intensidad luminosa</a></li>
+        <li><a href="index.html#estereorradian">Estereorradián</a></li>
+        <li><a href="index.html#Principios de la incertidumbre">Principio de incertidumbre</a></li>
+        <li><a href="index.html#Escalar">Escalar</a></li>
+        <li><a href="index.html#magnitud-vectorial">Magnitud Vectorial</a></li>
+        <li><a href="index.html#vector">Partes del vector</a></li>
+        <li><a href="index.html#suma">Suma de vectores</a></li>
+      </ul>
+      <h2 onmouseover="showSubMenu('unidad2SubMenu')" onmouseout="hideSubMenu('unidad2SubMenu')">Unidad 2</h2>
+      <ul id="unidad2SubMenu">
+        <li ><a href="unidad2.html#columb">Ley de Coulomb</a></li>
+        <li ><a href="unidad2.html#1ra-ley-de-newton">1ra ley de Newton</a></li>
+        <li><a href="unidad2.html#2da-ley-de-newton">2da ley de Newton</a></li>
+        <li><a href="unidad2.html#3ra-ley-de-newton">3ra ley de Newton</a></li>
+        <li><a href="unidad2.html#triangulos-notables">Triangulos notables</a></li>
+        <li><a href="unidad2.html#Ley-de-hook">Ley de hooks</a></li>
+      </ul>
+    </div>
 </div>
 <div class="image-section">
   <div class="image-container">
@@ -62,7 +65,6 @@
     </div>
     <div class="overlay"></div>
   </div>
-</div>
 </div>
     <div>
       <section id="que es la fisica" class="container">
@@ -757,8 +759,10 @@
         <p>Estos principios de la incertidumbre son fundamentales en la física cuántica y tienen implicaciones importantes en la descripción del comportamiento de partículas subatómicas. Indican que existe una inherente indeterminación en las mediciones precisas de ciertas propiedades de las partículas, y que la naturaleza misma de la realidad cuántica está sujeta a limitaciones fundamentales. Es importante destacar que los principios de la incertidumbre no se deben a limitaciones tecnológicas o de instrumentación, sino que son características intrínsecas de la naturaleza cuántica del mundo subatómico.</p>
         <section class="image-section">
           <div class="row">
-            <img src="https://cdn.quecuriosidades.com/wp-content/uploads/2018/12/Principio-de-incertidumbre-1024x455.jpg" alt="Formula de la incertidumbre">
-            <img src="https://www.lifeder.com/wp-content/uploads/2018/04/onda-transversal-partes.jpg" alt="Onda trasnversal" >
+            <div id="Ejemplos" class="collage">
+              <img src="https://cdn.quecuriosidades.com/wp-content/uploads/2018/12/Principio-de-incertidumbre-1024x455.jpg" alt="Formula de la incertidumbre">
+              <img src="https://www.lifeder.com/wp-content/uploads/2018/04/onda-transversal-partes.jpg" alt="Onda trasnversal" >
+            </div>
           </div>
           <div class="row">
             <img src="https://www.bing.com/th/id/OGC.1012987b510efe826b30208ad791f38f?pid=1.7&rurl=https%3a%2f%2fcdn.goconqr.com%2fuploads%2fmedia%2fimage%2f11635458%2fdesktop_61268e1e-4d45-4e1e-aeb8-aa15cee80857.GIF&ehk=SKpvZc6sjIXe915p53HVF%2f80FdUtOkdl1jzCMH98uco%3d" alt="onda-transversal-partes">

@@ -152,7 +152,7 @@ function calcularFuerza() {
 
   // Mostrar el resultado en la celda de resultado
   var resultadoElement = document.getElementById("resultado3");
-  resultadoElement.innerHTML = "La fuerza es: " + fuerza.toFixed(3) + " N";
+  resultadoElement.innerHTML = "La fuerza es: " + fuerza.toExponential(3) + " N";
 
   // Determinar si es atracción o repulsión
   if (fuerza > 0) {
@@ -183,4 +183,17 @@ function showSubMenu(subMenuId) {
   subMenu.style.display = "block";
   subMenu.style.overflowY = "scroll";
   subMenu.style.scrollbarColor = "#fff #fff"; // Cambia el color de la barra de desplazamiento según tus necesidades
+}
+
+//Calculadora de hooks
+function calcularFuerza() {
+  // Obtiene los valores ingresados por el usuario
+  const k = parseFloat(document.getElementById('constante').value);
+  const x = parseFloat(document.getElementById('deformacion').value);
+
+  // Calcula la fuerza usando la Ley de Hooke
+  const fuerza = k * x;
+
+  // Muestra el resultado en la página
+  document.getElementById('resultado2').textContent = `La fuerza en el resorte es: ${fuerza.toFixed(2)} N`;
 }
