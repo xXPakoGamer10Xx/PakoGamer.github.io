@@ -186,14 +186,14 @@ function showSubMenu(subMenuId) {
 }
 
 //Calculadora de hooks
-function calcularFuerza() {
-  // Obtiene los valores ingresados por el usuario
-  const k = parseFloat(document.getElementById('constante').value);
-  const x = parseFloat(document.getElementById('deformacion').value);
+function calcularFuerzaHooke() {
+  // Get the values from the input fields
+  const constante = document.getElementById("constante").value;
+  const deformacion = document.getElementById("deformacion").value;
 
-  // Calcula la fuerza usando la Ley de Hooke
-  const fuerza = k * x;
+  // Calcula la deformacion
+  const fuerza = constante * deformacion;
 
-  // Muestra el resultado en la página
-  document.getElementById('resultado2').textContent = `La fuerza en el resorte es: ${fuerza.toFixed(2)} N`;
+  // Muestra el resultado
+  document.getElementById("resultado2").innerHTML = fuerza;
 }
